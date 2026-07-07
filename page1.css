@@ -1,0 +1,150 @@
+/* Page Setup */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    
+    /* Background Image setup - replace 'teddy-bear-bg.jpg' with your actual image name */
+    background-image: url('Pink Heart aura wallpaper.jfif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Helper class to hide elements instantly */
+.hidden {
+    display: none !important;
+}
+
+/* Balloon Animation Logic */
+#balloon-container {
+    position: absolute;
+    bottom: -100px; /* Starts just below the screen */
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 10;
+    animation: floatUp 6s linear infinite;
+}
+
+#birthday-balloon {
+    font-size: 5rem;
+    user-select: none;
+    transition: transform 0.2s ease;
+}
+
+#birthday-balloon:hover {
+    transform: scale(1.15);
+}
+
+/* Keyframes to make balloon rise repeatedly */
+@keyframes floatUp {
+    0% {
+        bottom: -100px;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        bottom: 105vh;
+        opacity: 0;
+    }
+}
+
+/* Phone-style Video Container */
+#video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(kisses.jfif); /* Dark dim background to highlight video */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+/* Standard Phone Aspect Ratio Container (9:16 vertical standard) */
+.phone-frame {
+    width: 400px;       /* Standard phone width */
+    height: 700px;      /* Standard phone height */
+    max-width: 90%;
+    max-height: 90vh;
+    border-radius: 24px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border: 4px solid #333;
+}
+
+.phone-frame video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video fills the frame beautifully like a phone screen */
+}
+
+/* Gift Pop-up Modal Box */
+#gift-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+}
+
+.popup-content {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 85%;
+}
+
+.popup-content h2 {
+    color: #ff5e7e;
+    margin-top: 0;
+}
+
+#reveal-gift-btn {
+    background-color: #ff5e7e;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    font-weight: 600;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+#reveal-gift-btn:hover {
+    background-color: #e04d6a;
+    transform: scale(1.05);
+}
+
+.balloon{
+    height:300px;
+}
+
+h1{
+    color:#ee3056;
+}

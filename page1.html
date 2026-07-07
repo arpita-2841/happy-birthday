@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Surprise</title>
+    <link rel="stylesheet" href="page1.css">
+</head>
+<body>
+    <h1 id="catch_it">CATCH THE BALLOON</h1>
+    <!-- Floating Balloon Container (Floating from bottom to top until clicked) -->
+    <div id="balloon-container">
+        <div id="birthday-balloon"><img class="balloon" src="vecteezy_happy-birthday-balloon_35172175.svg" alt=""></div>
+    </div>
+
+    <!-- Phone-style Video Player Overlay (Initially Hidden) -->
+    <div id="video-overlay" class="hidden">
+        <div class="phone-frame">
+            <!-- Leave this empty/fill the src attribute with your video file name later -->
+            <video id="birthday-video" width:"50vw" height="100vh" >
+                <source src="cutevideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Gift Pop-up Modal (Initially Hidden, appears after video ends) -->
+    <div id="gift-popup" class="hidden">
+        <div class="popup-content">
+            <h2>There are gifts for you! 🎁</h2>
+            <p>Something special is waiting on the next page...</p>
+            <!-- Clicking this will navigate to your second page (the cards page) -->
+            <button id="reveal-gift-btn" onclick="window.location.href='page2.html'">Tap to Reveal the Gift</button>
+        </div>
+    </div>
+
+    <script src="page1.js"></script>
+</body>
+</html>

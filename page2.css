@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background:linear-gradient(rgb(240, 174, 185) , white); /* Clean, minimal warm-white background */
+    color: #4a4a4a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.hub-header {
+    text-align: center;
+    padding: 3rem 1rem 1rem;
+}
+
+.hub-header h1 {
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.hub-subtitle {
+    color: #8c8c8c;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Horizontal alignment for the 4 cards */
+#cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1200px;
+    width: 90%;
+    margin: 3rem auto;
+}
+
+/* Individual Card Styling */
+.gift-card {
+    background: #e39d9d;
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+}
+
+.gift-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.card-icon img{
+    width:200px
+}
+
+.gift-card h3 {
+    margin: 0.5rem 0;
+    color: #171616;
+    font-size: 1.2rem;
+}
+
+.gift-card p {
+    font-size: 0.9rem;
+    color: #1e1d1d;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Bottom Nav Button */
+.hub-footer {
+    margin-top: auto;
+    padding-bottom: 4rem;
+}
+
+#go-to-wishes-btn {
+    background-color: #d4a373;
+    color: white;
+    border: none;
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(212, 163, 115, 0.3);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+#go-to-wishes-btn:hover {
+    background-color: #c49263;
+    transform: scale(1.03);
+}
+
+/* Responsive adjustments for phones */
+@media (max-width: 768px) {
+    #cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .gift-card {
+        width: 80%;
+        max-width: 300px;
+    }
+}

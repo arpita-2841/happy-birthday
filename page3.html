@@ -1,0 +1,147 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Gift 💫</title>
+    <link rel="stylesheet" href="page3.css">
+</head>
+<body>
+
+    <main id="content-display-box">
+        
+        <!-- SECTION 1: THE LETTER VIEW (Hidden by default) -->
+        <div id="view-letter" class="gift-view hidden">
+            <article class="letter-paper">
+                <div><h1>My Letter to You </h1></div>
+                <div class="letter-text">
+                    
+                    <a href="letter_for_you_heart.pdf" target="_blank">
+                        <img id="loveLetter" src="Love Letter Sticker.jfif" alt="">
+                    </a>
+
+                </div>
+            </article>
+        </div>
+
+        <!-- SECTION 2: THE VIDEO VIEW (Hidden by default, styled as phone) -->
+        <div id="view-video" class="gift-view hidden">
+            <h2>A Message For You 📹</h2>
+            <div class="phone-video-wrapper">
+                <!-- Drop your dedicated video file right here -->
+                <video id="card-video-player" controls>
+                    <source src="your-message-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <!-- SECTION 3: THE SONGS VIEW (Hidden by default) -->
+        <div id="view-songs" class="gift-view hidden">
+            <h2>Songs That Remind Me of Us 🎵</h2>
+            <p class="section-desc">Click play to listen to our soundtrack</p>
+            
+            <div class="playlist-container">
+                <!-- Song Item 1 -->
+                <div class="song-row">
+                    <div class="song-details">
+                        <span class="song-title">KOI-NAA</span>
+                        <span class="song-artist">Harnoor , Shreya Ghoshal</span>
+                    </div>
+                    <audio controls>
+                        <source src="Koi-Naa-Bhool-Chuk-Maaf-Rajkummar-Rao-Wamiqa-Gabbi-Tanishk-Irshad-Shreya-Harnoor-Gifty.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+
+                <!-- Song Item 2 -->
+                <div class="song-row">
+                    <div class="song-details">
+                        <span class="song-title">HANGOVER</span>
+                        <span class="song-artist">Shreya Ghoshal , Salman KHan</span>
+                    </div>
+                    <audio controls>
+                        <source src="Hangover - Salman Khan.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+
+                 <div class="song-row">
+                    <div class="song-details">
+                        <span class="song-title">KITNA CHAHE</span>
+                        <span class="song-artist">Jass Manak , Asees Kaur</span>
+                    </div>
+                    <audio controls>
+                        <source src="Kitna_Chahe_1.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+
+                 <div class="song-row">
+                    <div class="song-details">
+                        <span class="song-title">TUM SE </span>
+                        <span class="song-artist">Raghav Chaitanya , Varun Jain</span>
+                    </div>
+                    <audio controls>
+                        <source src="Tum Se Teri Baaton Mein Aisa Uljha Jiya 128 Kbps.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                
+                 <div class="song-row">
+                    <div class="song-details">
+                        <span class="song-title">Tum Se Hi</span>
+                        <span class="song-artist">Pritam, Mohit Chauhan</span>
+                    </div>
+                    <audio controls>
+                        <source src="Tum Se Hi Jab We Met 128 Kbps.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                
+                 <div class="song-row">
+                    <div class="song-details">
+                        <span class="song-title">Jeene Laga Hoon</span>
+                        <span class="song-artist">Atif Aslam, Shreya Ghoshal</span>
+                    </div>
+                    <audio controls>
+                        <source src="Jeene Laga Hoon Ramaiya Vastavaiya 128 Kbps.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 4: WHY I LOVE YOU VIEW (Hidden by default) -->
+        <div id="view-reasons" class="gift-view hidden">
+            <h2 style="font-weight: 900; font-family: cursive;" >Our Memories</h2>
+            <ul class="reasons-list"  type="none">
+                <li>
+                    19th APRIL 2025 : Our First Chat
+                </li>
+                <li>
+                    26th APRIL 2025 : Stopped talking to you because JEE Advance was coming
+                </li>
+                <li>
+                    18th MAY 2025: started talking to you again
+                </li>
+                <li>
+                    1st july 2025:Really felt something something but was confused , is it love or attraction
+                </li>
+                <li>
+                    8th july 2025: yourrrr 19th birthdayyy , i was veryyy exciteddd and wrote a letter with so much loveeee and affection
+                </li>
+                <li>
+                   8th july 2025 to 21 july 2025 - i was very confused that i should tell you or not about my feelingss
+                </li>
+                <li>
+                    21st july 2025 : yayyyyy!!! i finallyy said "I LOVE YOU"
+                </li>
+                
+            </ul>
+        </div>
+
+    </main>
+
+    <!-- Fixed back button at the bottom -->
+    <nav class="navigation-bar">
+        <button id="back-to-hub-btn" onclick="window.location.href='page2.html'">⬅️ Back to Gifts</button>
+    </nav>
+
+    <script src="page3.js"></script>
+</body>
+</html>

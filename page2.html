@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick Your Gift 🎁</title>
+    <link rel="stylesheet" href="page2.css">
+</head>
+<body>
+
+    <header class="hub-header">
+        <h1>Your Birthday Gifts </h1>
+        <p class="hub-subtitle">Click on each card to open it</p>
+    </header>
+
+    <!-- Row of 4 interactive cards -->
+    <main id="cards-container">
+        
+        <!-- Card 1: The Letter -->
+        <div class="gift-card" data-card="letter">
+            <div class="card-icon">
+                <img src="Love Letter Sticker.jfif" alt="">
+            </div>
+            <h3>A Letter For You</h3>
+            <p>A few words from my heart to yours.</p>
+        </div>
+
+
+        <!-- Card 3: Dedicated Songs -->
+        <div class="gift-card" data-card="songs">
+            <div class="card-icon">
+                <img style="height:200px;" src="spotify.jfif" alt="">
+            </div>
+            <h3>Our Soundtrack</h3>
+            <p>Songs that always remind me of us.</p>
+        </div>
+
+        <!-- Card 4: Why I Love You -->
+        <div class="gift-card" data-card="reasons">
+            <div class="card-icon">
+                <img src="cute bubu.jfif" alt="">
+            </div>
+            <h3>Our Memory Lane</h3>
+            <p>Some Of My Favourite Days with you</p>
+        </div>
+
+    </main>
+
+    <!-- Bottom navigation bar to proceed to the final page -->
+    <footer class="hub-footer">
+        <button id="go-to-wishes-btn" onclick="window.location.href='page4.html'">NEXT</button>
+    </footer>
+
+    <script src="page2.js"></script>
+</body>
+</html>
