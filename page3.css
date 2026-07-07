@@ -125,6 +125,7 @@ audio {
     box-shadow: 0 4px 15px rgba(0,0,0,0.02);
     text-align: left;
     line-height: 1.8;
+    overflow:auto;
 }
 
 .reasons-list li {
