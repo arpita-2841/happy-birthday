@@ -129,12 +129,11 @@ audio {
 }
 
 .reasons-list li {
-    width:100%;
     font-weight: 600;
     font-style: italic;
-    margin: 1.2rem;
+    margin: 1rem;
     color: #ed94e5;
-    font-size: 1.5rem;
+    font-size: 1rem;
 
 }
 
